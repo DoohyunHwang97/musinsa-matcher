@@ -48,5 +48,17 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.tsx"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/server",
+      "<rootDir>/src/test-utils",
+      "<rootDir>/src/types",
+      "<rootDir>/src/react-app-env.d.ts"
+    ]
   }
 }
